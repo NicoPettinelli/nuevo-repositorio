@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: greenyellow;
+}
+
+header{
+    background-color: green;
+    padding: 80px;
+    font-size: large;
+}
+
+h1{
+    color: black;
+    padding: 40px;
+    text-align: center;
+    margin: 10px 600px 10px 400px;
+    border: 10px solid black;
+}
+
+.nosotros-explicacion{
+    font-family: 'Poppins' sans-serif;
+    font-style: normal;
+    color: black;
+    padding: 20px;
+    margin-right: 400px;
+    margin-top: 5px;
+    margin-left: 200px;
+    border: 10px 
+}
+
+.video-gym{
+    margin-left: 500px;
+}
+
+.estructura{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    border: 10px solid black;
+}
+
+.imagen-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: center;
+}
+
+.press{
+    text-align: center;
+}
+
+.muscul{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.musculacion-actividad{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-top: 40px;
+}
+
+.crossfit-actividad{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-top: 40px;
+}
+
+.galeriaimg{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 40px;
+    border: 10px solid black;
+    margin-left: 400px;
+}
+
+.luga{
+    margin-top: 40px;
+    margin-left: 800px;
+}
+
+footer{
+    margin-top: 1.5em;
+    padding: 80px;
+    background-color: green;
+    margin-bottom: 0;
+}
+
+header{
+    grid-area: header;
+}
+
+.we{
+    grid-area: we;
+}
+
+.nosotros-explicacion{
+    grid-area: nosotros-explicacion;
+}
+
+.video-gym{
+    grid-area: video-gym;
+}
+
+.imagen-principal{
+    grid-area: imagen-principal;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.grilla-general{
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header                  header"
+    "video-gym               we"
+    "nosotros-explicacion    nosotros-explicacion "
+    "imagen-principal"
+    "footer";
+}
+
+@media (min-width: 500px) {
+    .grilla-general{
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "h1"
+        "nosotros-explicacion"
+        "video-gym"
+        "imagen-principal"
+        "footer";
+    }
+}
+
+
+
