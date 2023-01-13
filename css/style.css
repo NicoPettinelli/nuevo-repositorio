@@ -20,10 +20,11 @@ a:hover{
 
 body{
     background-color: greenyellow;
+    
 }
 
 main{
-    height: 100vh;
+    margin-top: auto;
 }
 
 header{
@@ -85,12 +86,21 @@ h1{
 }
 
 .mapa{
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
 }
 
 
 footer{
     background-color: green;
+    height: 100%;
 }
 
+.card{
+    background-color: rgb(74, 206, 96);
+}
+
+.card-img-top{
+    height: 163px;
+    width: 262px;
+}
